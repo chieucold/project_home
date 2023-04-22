@@ -10,7 +10,12 @@ class HomeView extends StatelessWidget {
         title: const Text('Login'),
       ),
       body: Column(
-        children: const [Text("Home Page")],
+        children: const [
+          Text("Home Page"),
+          Text('Edit home'),
+          SizedBox(height: 1,),
+          Text('Chỉnh sửa home'),
+        ],
       ),
     );
   }
