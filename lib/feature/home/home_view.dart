@@ -10,17 +10,10 @@ class HomeView extends StatelessWidget {
         title: const Text('Login'),
       ),
       body: Column(
-        children: [
-          const Text("Home Page"),
-          Container(
-            height: 50,
-            width: 200,
-            decoration: const BoxDecoration(
-              color: Colors.amber,
-              borderRadius: BorderRadius.all(Radius.circular(3)),
-            ),
-            child: const Text('Button'),
-          )
+        children: const [
+          Text("Home Page"),
+          Text('Edit home'),
+          Text('Chỉnh sửa home'),
         ],
       ),
     );
