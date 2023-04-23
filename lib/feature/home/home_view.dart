@@ -15,6 +15,7 @@ class HomeView extends StatelessWidget {
           Text('Edit home'),
           SizedBox(height: 1,),
           Text('Chỉnh sửa home'),
+          Text('Chỉnh sửa home'),
         ],
       ),
     );
