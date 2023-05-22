@@ -13,7 +13,10 @@ class HomeView extends StatelessWidget {
         children: const [
           Text("Home Page"),
           Text('Edit home'),
-          SizedBox(height: 1,),
+          SizedBox(
+            height: 1,
+          ),
+          Text('Chỉnh sửa home'),
           Text('Chỉnh sửa home'),
         ],
       ),
