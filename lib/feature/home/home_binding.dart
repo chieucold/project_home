@@ -1,11 +1,11 @@
 import 'package:get/get.dart';
 import 'package:project_home/base/presentation/base_bindings.dart';
-import 'package:project_home/feature/dashboard/dash_board_controller.dart';
+import 'package:project_home/feature/home/home_controller.dart';
 
-class DashboardBinding extends BaseBindings {
+class HomeBinding extends BaseBindings {
   @override
   void bindingsController() {
-    Get.lazyPut(DashBoardController.new);
+    Get.lazyPut(HomeController.new);
   }
 
   @override
