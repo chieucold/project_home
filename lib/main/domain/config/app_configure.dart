@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:project_home/main/domain/config/app_flavor.dart';
+import 'package:project_home/main/domain/di/injection.dart';
 
 class AppConfigureFlavor {
   static Future<void> configure(Flavor flavor) async {
@@ -17,5 +18,6 @@ class AppConfigureFlavor {
       ),
     );
     await FlavorConfig.setup(flavor);
+    await DependencyInjection.injection();
   }
 }
