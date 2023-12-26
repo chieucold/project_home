@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:project_home/main/domain/config/app_configure.dart';
-import 'package:project_home/main/domain/config/app_flavor.dart';
-import 'package:project_home/main/presentation/home_app.dart';
+import 'package:project_home/presentation/app.dart';
+import 'package:project_home/utils/config/app_configure.dart';
+import 'package:project_home/utils/config/app_flavor.dart';
 
 void main() async {
   await AppConfigureFlavor.configure(Flavor.dev);
-  runApp(const HomeApp());
+  runApp(const App());
 }
+
+///
+///
+/// thêm utlis(notification,service)
+/// dùng text uarua GetX
+///

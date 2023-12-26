@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:project_home/base/presentation/widget/dialog/contents/alert_dialog_content.dart';
 import 'package:project_home/base/presentation/widget/dialog/contents/one_button_dialog_content.dart';
-import 'package:project_home/main/domain/routes/route_navigation.dart';
+import 'package:project_home/utils/config/routes/route_navigation.dart';
 
 class AppDialog {
   static Future showAlertDialog({

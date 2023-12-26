@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:project_home/base/presentation/resources/app_color.dart';
-import 'package:project_home/base/presentation/resources/asset_paths/image_paths.dart';
+import 'package:project_home/utils/config/app_color.dart';
 import 'package:project_home/base/presentation/widget/app_bar/invisible_app_bar.dart';
+import 'package:project_home/utils/config/asset_paths/image_paths.dart';
 
 class ScreenLayout extends StatelessWidget {
   final Widget body;

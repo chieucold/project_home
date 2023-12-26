@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:project_home/base/presentation/resources/app_color.dart';
+import 'package:project_home/utils/config/app_color.dart';
 
 enum AppCircularProgressType { normal, small, whiteSmall }
 

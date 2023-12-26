@@ -5,13 +5,13 @@ import 'package:get/get.dart';
 import 'package:project_home/base/data/model/error_response.dart';
 import 'package:project_home/base/presentation/connectivity/connectivity_controller.dart';
 import 'package:project_home/base/presentation/mixin/app_loader_mixin.dart';
-import 'package:project_home/base/presentation/resources/app_color.dart';
-import 'package:project_home/base/presentation/resources/app_edge_insets.dart';
-import 'package:project_home/base/presentation/resources/app_text_style.dart';
-import 'package:project_home/base/presentation/resources/asset_paths/image_paths.dart';
 import 'package:project_home/base/presentation/widget/dialog/app_dialog.dart';
-import 'package:project_home/main/domain/routes/route_navigation.dart';
-import 'package:project_home/main/domain/utils/snack_bar_util.dart';
+import 'package:project_home/utils/config/app_color.dart';
+import 'package:project_home/utils/extension/view_utils.dart';
+import 'package:project_home/utils/config/app_edge_insets.dart';
+import 'package:project_home/utils/config/app_text_style.dart';
+import 'package:project_home/utils/config/asset_paths/image_paths.dart';
+import 'package:project_home/utils/config/routes/route_navigation.dart';
 
 class BaseController extends GetxController with AppLoaderMixin {
   final errorMessagePresent = RxnString();
@@ -70,14 +70,14 @@ class BaseController extends GetxController with AppLoaderMixin {
         Get.find<ConnectivityController>().showLostConnectionDialog();
       } else if (error.type == DioErrorType.response) {
         final errorResponse = ErrorResponse.fromJson(error.response?.data);
-        SnackBarUtil.showToastError(
+        ViewUtils.showToastError(
           message: errorResponse.message,
         );
       }
       if (onError != null) {
         onError!(errorResponse.message);
       } else {
-        SnackBarUtil.showToastError(
+        ViewUtils.showToastError(
           message: errorResponse.message,
           marginBottomMobile: AppEdgeInsets.zero,
         );

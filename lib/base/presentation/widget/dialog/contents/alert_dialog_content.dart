@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:project_home/base/presentation/resources/app_color.dart';
-import 'package:project_home/base/presentation/resources/app_text_style.dart';
+import 'package:project_home/utils/config/app_color.dart';
+import 'package:project_home/utils/config/app_text_style.dart';
 
 class AlertDialogContent extends StatelessWidget {
   const AlertDialogContent({
